@@ -72,25 +72,25 @@ The API provides the following RESTful endpoints:
 
 ### Fetch and Persist Movies
 
-- **POST** `/movies/fetch-and-persist`
+- **POST** `/movie
 
 Fetches movies based on the specified criteria from TMDB and persists them in MongoDB. This endpoint does not require any input.
 
 ### Get Movie by ID
 
-- **GET** `/movies/:id`
+- **GET** `/movie/:id`
 
 Retrieves a single movie by its UUID from the MongoDB database.
 
 ### Get All Movies
 
-- **GET** `/movies`
+- **GET** `/movie`
 
 Retrieves all movies from the MongoDB database.
 
 ### Delete Movie by ID
 
-- **DELETE** `/movies/:id`
+- **DELETE** `/movie/:id`
 
 Deletes a single movie by its UUID from the MongoDB database.
 
@@ -133,4 +133,4 @@ The API can be deployed to a cloud service provider such as DigitalOcean. Ensure
 
 ### Notes
 
-Remember to replace placeholder texts like `https://your-repository-url-here.git`, `your-project-directory`, `your_tmdb_api_key_here`, `your_mongodb_connection_string_here`, and `movie_uuid_here` with your actual data.
+Remember to replace placeholder texts like `your_tmdb_api_key_here`, `your_mongodb_connection_string_here` with your actual data.
