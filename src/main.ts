@@ -16,8 +16,8 @@ async function bootstrap() {
 
   const swaggerConfig = new DocumentBuilder()
     .setTitle("Nest Task API")
-    .addServer(`http://localhost:${appPort}`, "Local")
     .addServer("https://king-prawn-app-7rgxo.ondigitalocean.app", "Production")
+    .addServer(`http://localhost:${appPort}`, "Local")
     .setVersion("1")
     .build();
 
