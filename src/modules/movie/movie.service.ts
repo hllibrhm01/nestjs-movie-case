@@ -160,12 +160,12 @@ export class MovieService {
             await newMovie.save();
             console.log("Movies added to the database");
           } catch (error) {
-            console.error(error);
+            throw new Error(error.message);
           }
         })
       );
     } catch (error) {
-      console.error(error);
+      throw new Error(error.message);
     }
   }
 }
