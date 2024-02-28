@@ -1,0 +1,28 @@
+type Movie {
+  name: String!
+  overview: String!
+  popularity: Float!
+  voteAverage: Float!
+  voteCount: Int!
+  releaseDate: String!
+  genres: [Genres]!
+  createdAt: String!
+  updatedAt: String!
+}
+
+type Query {
+  movies: [Movie]!
+  movie(id: String!): Movie
+}
+
+type Genres {
+  id: Int!
+  name: String!
+}
+
+
+type Mutation {
+  createMovie(name: String!, overview: String!, popularity: Float!, voteAverage: Float!, voteCount: Int!, releaseDate: String!, genres: [Int]!): Movie!
+  updateMovie(id: Int!, name: String, overview: String, popularity: Float, voteAverage: Float, voteCount: Int, releaseDate: String, genres: [Int]): Movie!
+  removeMovie(id: Int!): Movie!
+}

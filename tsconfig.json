@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "module": "commonjs",
+    "types": [
+      "jest",
+      "node"
+    ],
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "allowJs": true,
+    "checkJs": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+  },
+  "include": [
+    "src/**/*", "src/modules/movie/movie.graphql"
+  ]
+}
