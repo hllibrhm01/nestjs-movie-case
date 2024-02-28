@@ -28,8 +28,8 @@ To prevent access by code reviewers, token information has been shared in the .e
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://your-repository-url-here.git
-cd your-project-directory
+git clone https://github.com/hllibrhm01/nestjs-movie-case.git
+cd nestjs-movie-case
 ```
 
 Install the project dependencies:
