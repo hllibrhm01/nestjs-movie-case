@@ -107,7 +107,6 @@ export function makeMovie(
   optionalValues: Partial<MovieDocument> = {}
 ): MovieDocument {
   return {
-    // _id: new mongoose.Types.ObjectId("507f1f77bcf86cd799439011"),
     name: optionalValues.name ?? "Schindler's List",
     overview:
       optionalValues.overview ??
