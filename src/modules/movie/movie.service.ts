@@ -116,7 +116,7 @@ export class MovieService {
   }
 
   async getMovies(): Promise<void> {
-    const self = this; // this'in doğru bir şekilde ulaşılabilmesi için
+    const self = this;
 
     const url =
       "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=primary_release_date.asc&vote_average.gte=8.4&vote_count.gte=1500&watch_region=TR&with_watch_providers=8";
