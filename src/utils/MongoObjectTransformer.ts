@@ -64,7 +64,6 @@ export function toMongoObjectIdArray({
 }
 
 export function fromMongoObjectId({ value }: TransformFnParams): string | null {
-  // const value = obj[key];
   if (!value) return null;
   if (value instanceof Types.ObjectId) return value.toHexString();
   if ("_id" in value) return value._id.toHexString();
@@ -74,7 +73,6 @@ export function fromMongoObjectId({ value }: TransformFnParams): string | null {
 export function fromMongoObjectIdArray({
   value
 }: TransformFnParams): string[] | null {
-  // const value = obj[key];
   if (!value) return null;
   if (Array.isArray(value)) {
     return value.map((v) => {
